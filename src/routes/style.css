@@ -1,0 +1,15 @@
+.main-navbar {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.main-navbar a {
+    display: block;
+    float:left;
+    color: cyan;
+    text-decoration: none;
+    padding: 30px;
+    transition: .5s;
+}

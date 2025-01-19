@@ -1,5 +1,7 @@
 # PersonalSite
 
+https://www.youtube.com/watch?v=G4LYPf8isVg
+
 > [!Note]
 > Create an empty +layout.svelte in a route to cancel out the parents layout
 > @render childeren() is where the page content of child will appear in the document
