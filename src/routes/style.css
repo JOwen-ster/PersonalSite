@@ -1,15 +1,16 @@
+/* OUTLINE ALL ELEMENTS */
+/* body,body * {
+    border: 5px solid #000;
+    border-radius: 15px;
+} */
+
 .main-navbar {
-    position: sticky;
-    top: 0;
-    overflow: hidden;
-    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.main-navbar a {
+.main-navbar > a {
     display: block;
-    float:left;
-    color: cyan;
     text-decoration: none;
-    padding: 30px;
-    transition: .5s;
 }
