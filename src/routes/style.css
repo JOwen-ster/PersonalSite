@@ -1,8 +1,37 @@
-/* OUTLINE ALL ELEMENTS */
 /* body,body * {
-    border: 5px solid #000;
+    border: 5px solid red;
     border-radius: 15px;
 } */
+
+body {
+    background-color: #001220;
+    text-decoration: none;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+}
+
+.part {
+    aspect-ratio: 960/600;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.part-img {
+    background-image: url("assets/layered-waves-haikei.svg");
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .main-navbar {
     display: flex;

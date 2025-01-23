@@ -12,3 +12,5 @@
 </nav>
 
 {@render children()}
+
+<div class="part part-img"></div>
