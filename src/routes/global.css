@@ -1,16 +1,13 @@
-/* body,body * {
-    border: 5px solid red;
-    border-radius: 15px;
-} */
+/*make this only set background color and the navbar*/
+
 
 body {
     background-color: #001220;
-    text-decoration: none;
-    margin: 0;
 }
 
 h1 {
-    color: white;
+    color: cyan;
+    text-shadow: none;
 }
 
 .part {
@@ -19,12 +16,10 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin: 0;
-    padding: 0;
 }
 
 .part-img {
-    background-image: url("assets/layered-waves-haikei.svg");
+    background-image: url("./assets/layered-waves-haikei.svg");
 }
 
 .container {
@@ -41,5 +36,23 @@ h1 {
 
 .main-navbar > a {
     display: block;
+    border: 2px solid #00b1ff;
     text-decoration: none;
+}
+
+.avatar-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar{
+    scale: 80%;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.avatar:hover {
+    scale: 100%;
+    box-shadow: 0 0 20px 10px #00b1ff;
 }
