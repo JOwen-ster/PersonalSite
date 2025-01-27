@@ -3,6 +3,7 @@
 
 body {
     background-color: #001220;
+    margin: 0;
 }
 
 h1 {
@@ -40,19 +41,30 @@ h1 {
     text-decoration: none;
 }
 
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .avatar-box{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
 .avatar{
     scale: 80%;
     border-radius: 50%;
     transition: .5s;
+    animation: spin 5s linear infinite;
 }
 
 .avatar:hover {
     scale: 100%;
     box-shadow: 0 0 20px 10px #00b1ff;
 }
+
