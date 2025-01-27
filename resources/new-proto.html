@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="text-typing-p"></p>
+    <br>
+    <div id="text-typing-div"></div>
+    
+    <script>
+    const elementP = document.getElementById("text-typing-p");
+    const elementDiv = document.getElementById("text-typing-div");
+    let indexP = 0;
+    let indexDiv = 0;
+
+    function typeText(text, DOM_ELEMENT, index) {
+        if (index < text.length) {
+            DOM_ELEMENT.textContent += text[index];
+            return index + 1;
+        } else {
+            clearInterval(intervalId);
+            return index;
+        }
+    }
+
+    const intervalP = setInterval(() => {
+        indexP = typeText('Hello World', elementP, indexP);
+    }, 100);
+
+    const intervalDiv = setInterval(() => {
+        indexDiv = typeText('Coding', elementDiv, indexDiv);
+    }, 100);
+    </script>
+</body>
+</html>

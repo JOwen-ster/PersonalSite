@@ -1,4 +1,4 @@
-/*make global css only set background color and the navbar*/
+/*make global css only static elements*/
 
 
 body {
@@ -11,16 +11,16 @@ h1 {
     text-shadow: none;
 }
 
-.part {
-    aspect-ratio: 960/600;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.main-navbar {
+    display: flex;
+    flex-direction: column;
 }
 
-.part-img {
-    background-image: url("./assets/layered-waves-haikei.svg");
+.main-navbar > a {
+    display: block;
+    border: 2px solid white;
+    width: 10%;
+    text-decoration: none;
 }
 
 .container {
@@ -29,16 +29,15 @@ h1 {
     align-items: center;
 }
 
-.main-navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.container > .container-item {
+    display: inline-block;
+    color: white;
 }
 
-.main-navbar > a {
-    display: block;
-    border: 2px solid #00b1ff;
-    text-decoration: none;
+.avatar-box{
+    display: flex;
+    justify-content: center;
+    align-items: center
 }
 
 @keyframes spin {
@@ -48,12 +47,6 @@ h1 {
     to {
         transform: rotate(360deg);
     }
-}
-
-.avatar-box{
-    display: flex;
-    justify-content: center;
-    align-items: center
 }
 
 .avatar{
@@ -68,3 +61,14 @@ h1 {
     box-shadow: 0 0 20px 10px #00b1ff;
 }
 
+.part {
+    aspect-ratio: 960/600;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.part-img {
+    background-image: url("./assets/layered-waves-haikei.svg");
+}

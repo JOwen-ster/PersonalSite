@@ -19,9 +19,17 @@
     <a href="./Contact">Contact</a>
 </nav>
 
+<div class="container">
+    <div class="container-item">One</div>
+    <div class="container-item">Two</div>
+    <div class="container-item">Three</div>
+    <div class="container-item">Four</div>
+    <div class="container-item">Five</div>
+</div>
+
 <h1>Hello</h1>
 <div class="avatar-box">
-    <img src="./assets/tojiwoohoo.jpg" alt="Profile" class="avatar"/>
+    <img src="./assets/placeholder.jpg" alt="Profile" class="avatar"/>
 </div>
 
 
