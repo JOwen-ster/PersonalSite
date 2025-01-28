@@ -1,43 +1,18 @@
 /*make global css only static elements*/
 
 
-body {
+* {
     background-color: #001220;
     margin: 0;
-}
-
-h1 {
-    color: cyan;
-    text-shadow: none;
-}
-
-.main-navbar {
-    display: flex;
-    flex-direction: column;
-}
-
-.main-navbar > a {
-    display: block;
-    border: 2px solid white;
-    width: 10%;
-    text-decoration: none;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container > .container-item {
-    display: inline-block;
-    color: white;
+    padding: 0;
 }
 
 .avatar-box{
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 @keyframes spin {
@@ -49,21 +24,99 @@ h1 {
     }
 }
 
-.avatar{
-    scale: 80%;
+.avatar {
+    scale: 100%;
     border-radius: 50%;
-    transition: .5s;
     animation: spin 5s linear infinite;
+    transition: .5s;
 }
 
 .avatar:hover {
-    scale: 100%;
+    scale: 130%;
     box-shadow: 0 0 20px 10px #00b1ff;
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 50px;
+    padding: 50px;
+    border: 5px solid white;
+    border-radius: 25px;
+}
+
+.side-navbar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 5px solid red;
+    border-radius: 25px;
+}
+
+.img-frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid green;
+}
+
+.side-navbar-icon {
+    width: 70%;
+    background: transparent;
+    transition: 0.5s;
+}
+
+.side-navbar-icon:hover {
+    scale: 120%;
+}
+
+.side-navbar-option-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 5px solid blue;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.side-navbar-option {
+    color: purple;
+    padding: 10px;
+    border: 5px solid white;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.side-navbar-option:hover {
+    background-color: #002036;
+    scale: 110%;
+}
+
+.main-window-box {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid red;
+    border-radius: 25px;
+}
+
+.main-window-top-bar {
+    display: flex;
+}
+
+.main-window-view {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    border: 5px solid yellow;
+    color: white;
+}
+
+
+
 .part {
     aspect-ratio: 960/600;
-    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

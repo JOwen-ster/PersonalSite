@@ -13,6 +13,3 @@
 <h1>Tech Stack</h1>
 
 <h2>Frontend</h2>
-<ul>
-    <li>SvelteKit</li>
-</ul>
