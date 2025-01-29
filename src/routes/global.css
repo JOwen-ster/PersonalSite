@@ -49,7 +49,6 @@
 .side-navbar-menu {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     border: 5px solid red;
     border-radius: 25px;
 }
@@ -58,11 +57,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
     border: 5px solid green;
 }
 
 .side-navbar-icon {
-    width: 70%;
     background: transparent;
     transition: 0.5s;
 }
@@ -83,7 +82,7 @@
 
 .side-navbar-option {
     color: purple;
-    padding: 10px;
+    padding: 30px;
     border: 5px solid white;
     border-radius: 25px;
     transition: 0.5s;
@@ -91,7 +90,7 @@
 
 .side-navbar-option:hover {
     background-color: #002036;
-    scale: 110%;
+    scale: 120%;
 }
 
 .main-window-box {
@@ -103,8 +102,23 @@
 
 .main-window-top-bar {
     display: flex;
+    flex-direction: row;
+    border: 5px solid green;
+    border-radius: 25px;
+    color: white;
 }
 
+.main-window-top-bar-current-page {
+    display: flex;
+}
+
+.main-window-top-bar-controls {
+    display: flex
+}
+
+.main-window-top-bar-controls > button {
+    border: 5px solid white;
+}
 .main-window-view {
     display: flex;
     flex-direction: column;
@@ -112,8 +126,6 @@
     border: 5px solid yellow;
     color: white;
 }
-
-
 
 .part {
     aspect-ratio: 960/600;

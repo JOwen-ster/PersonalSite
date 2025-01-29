@@ -14,7 +14,7 @@
 <div class="container">
     <div class="side-navbar-menu">
         <div class="img-frame">
-            <img src="./assets/placeholder.jpg" alt="MenuIcon" class="side-navbar-icon">
+            <div>☰</div>
         </div>
 
         <div class="side-navbar-option-box">
@@ -24,14 +24,12 @@
             <a class="side-navbar-option" href="./TechStack">Tech Stack</a>
             <a class="side-navbar-option" href="./Contact">Contact</a>
         </div>
-
     </div>
 
     <div class="main-window-box">
         <div class="main-window-top-bar">
-            <div class="img-frame">
-                <img src="./assets/placeholder.jpg" alt="MenuIcon" class="side-navbar-icon">
-            </div>
+            <div>Current Page</div>
+            <div>hallo</div>
         </div>
 
         <div class="main-window-view">
