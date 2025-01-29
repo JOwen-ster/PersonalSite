@@ -5,7 +5,7 @@
 </script>
 
 <style>
-    /*local css*/
+    /*local css applied only to this component*/
     h1 {
         color: yellow;
     }
