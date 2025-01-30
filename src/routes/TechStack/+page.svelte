@@ -10,6 +10,16 @@
     }
 </style>
 
+
+<script>
+
+</script>
+
+
 <h1>Tech Stack</h1>
 
-<h2>Frontend</h2>
+Here’s what I use:
+<ul>
+    <li>SvelteKit</li>
+</ul>
+
