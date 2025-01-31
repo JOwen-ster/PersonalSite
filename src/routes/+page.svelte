@@ -1,6 +1,10 @@
 <script>
-
+    import Structure from '../Components/Structure.svelte';
+    const pageObject = {
+        pageTitle: 'Home',
+        pageContent: 'Welcome',
+    }
 </script>
 
 
-<h1>Welcome</h1>
+<Structure {...pageObject} />

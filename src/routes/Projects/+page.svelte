@@ -1,10 +1,9 @@
 <script>
-    import { pageTitle } from '$lib/stores.js';
-    import { onMount } from 'svelte'
-
-    onMount( () => {
-        pageTitle.set("Projects");
-    });
+    import Structure from '../../Components/Structure.svelte';
 </script>
 
-<p>Here are my projects!</p>
+
+<Structure
+        pageTitle={'Projects'}
+        pageContent = 'Here are my projects!'
+/>

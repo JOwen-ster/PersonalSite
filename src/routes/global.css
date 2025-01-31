@@ -57,7 +57,7 @@ body {
     bottom: 10px;
     width: 80%;
     height: 2px;
-    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background: linear-gradient(90deg, cyan, white);
     border-radius: 50px;
     transform-origin: bottom right;
     transition: transform 0.5s ease-in-out;

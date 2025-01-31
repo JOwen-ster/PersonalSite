@@ -1,6 +1,8 @@
-<h1>An Error Occured</h1>
 <style>
     h1 {
         color: red;
     }
 </style>
+
+
+<h1>An Error Occurred</h1>
