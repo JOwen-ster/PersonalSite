@@ -54,19 +54,20 @@ body {
     content: '';
     position: absolute;
     left: 50%;
-    bottom: 0;
-    width: 90%;
+    bottom: 10px;
+    width: 80%;
     height: 2px;
     background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    border-radius: 50px;
     transform-origin: bottom right;
     transition: transform 0.5s ease-in-out;
     transform: translateX(-50%) scaleX(0);
 }
 
 .side-navbar-option:hover {
-    background: rgba(0, 177, 255, 0.2);
+    /*background: rgba(0, 177, 255, 0.2);*/
     transform: translateX(15px);
-    box-shadow: 0 0 10px rgba(0, 177, 255, 0.5);
+    /*box-shadow: 0 0 10px rgba(0, 177, 255, 0.5);*/
 }
 
 /* Apply the animation on hover */
