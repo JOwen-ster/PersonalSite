@@ -12,5 +12,3 @@
         pageTitle={'Tech Stack'}
         pageContent = {paragraph}
 />
-
-<h1>Tech Stack</h1>
