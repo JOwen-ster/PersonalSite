@@ -13,7 +13,6 @@
         color: white;
         text-shadow: cyan 1px 0 10px;
     }
-
 </style>
 
 <div class="avatar-box">
