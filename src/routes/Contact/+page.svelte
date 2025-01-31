@@ -1,5 +1,5 @@
 <script>
-    import Layout from '../+layout.svelte';
+
 </script>
 
 <p>GitHub: <strong>JOwen-ster</strong></p>

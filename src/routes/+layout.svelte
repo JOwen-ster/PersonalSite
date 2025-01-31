@@ -2,7 +2,6 @@
     // global css that the layout will pass on to its children
     import './global.css';
     //let { children } = $props();
-    export let pageTitle = 'Home';
 </script>
 
 <style>
@@ -12,9 +11,9 @@
     }
 </style>
 
-<div class="avatar-box">
-    <img src="./assets/placeholder.jpg" alt="Profile" class="avatar"/>
-</div>
+<!--<div class="avatar-box">-->
+<!--    <img src="./assets/placeholder.jpg" alt="Profile" class="avatar"/>-->
+<!--</div>-->
 
 <div class="container">
     <div class="side-navbar">
@@ -33,7 +32,7 @@
 
     <div class="main-window">
         <div class="main-window-header">
-            <div class="main-window-page-display">{pageTitle}</div>
+            <div>Current Page</div>
             <div class="main-window-buttons">
                 <div class="circle green"></div>
                 <div class="circle yellow"></div>
@@ -52,6 +51,6 @@
 
 <!--{@render children}-->
 
-<h1>~</h1>
+<!--<h1>~</h1>-->
 
-<div class="part part-img"></div>
+<!--<div class="part part-img"></div>-->
