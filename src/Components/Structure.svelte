@@ -1,3 +1,6 @@
+<!--Refactor Layout-->
+
+
 <script>
     // global css that the layout will pass on to its children
     import '../routes/global.css'
