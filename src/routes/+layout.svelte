@@ -3,13 +3,12 @@
     import './global.css';
     //let { children } = $props();
     import { pageTitle } from '$lib/stores.js';
-
 </script>
 
 <style>
     /*local css applied only to this component*/
-    h1 {
-        color: yellow;
+    h3 {
+        color: cyan;
     }
 </style>
 
@@ -34,7 +33,7 @@
 
     <div class="main-window">
         <div class="main-window-header">
-            <div>{$pageTitle}</div>
+            <h3>{$pageTitle}</h3>
             <div class="main-window-buttons">
                 <div class="circle green"></div>
                 <div class="circle yellow"></div>

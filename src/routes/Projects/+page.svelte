@@ -1,9 +1,9 @@
 <script>
     import { pageTitle } from '$lib/stores.js';
-    import { onMount } from 'svelte';
+    import { onMount } from 'svelte'
 
-    onMount(() => {
-        pageTitle.set("This is my Tech Stack!");
+    onMount( () => {
+        pageTitle.set("Projects");
     });
 </script>
 
