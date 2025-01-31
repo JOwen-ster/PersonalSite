@@ -2,6 +2,8 @@
     // global css that the layout will pass on to its children
     import './global.css';
     //let { children } = $props();
+    import { pageTitle } from '$lib/stores.js';
+
 </script>
 
 <style>
@@ -32,7 +34,7 @@
 
     <div class="main-window">
         <div class="main-window-header">
-            <div>Current Page</div>
+            <div>{$pageTitle}</div>
             <div class="main-window-buttons">
                 <div class="circle green"></div>
                 <div class="circle yellow"></div>

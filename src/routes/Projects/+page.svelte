@@ -1,8 +1,10 @@
 <script>
     import { pageTitle } from '$lib/stores.js';
-    $pageTitle = "These are all my projects!";
+    import { onMount } from 'svelte';
+
+    onMount(() => {
+        pageTitle.set("This is my Tech Stack!");
+    });
 </script>
 
-<p>Here are some of my projects...</p>
-
-<p>My latest projects!</p>
+<p>Here are my projects!</p>
