@@ -11,3 +11,5 @@ add some transitions
 maybe add a star background
 
 instead of typing effect, use an on hover then the text fades in
+
+make a button that puts all content onto 1 page instead of a dynamic layout
