@@ -6,12 +6,29 @@
     import './global.css'
     import LayoutViewHeader from "../Components/LayoutViewHeader.svelte";
     import LayoutViewContent from "../Components/LayoutViewContent.svelte";
-    import { page } from "$app/state";
+    let showNavbar = $state(true);
+    function toggleNavbar() {
+        showNavbar = !showNavbar;
+    }
+    let { children } = $props();
 </script>
 
 <style>
     /*local css applied only to this component*/
+    .toggle-button {
+        background: rgba(255, 255, 255, 0.05);
+        color: darkorange;
+        border: 5px solid transparent;
+        border-radius: 25px;
+        box-shadow: 0 0 15px rgb(0, 255, 255);
+        padding: 10px;
+        transition: 0.3s ease-in-out;
+    }
 
+    .toggle-button:hover     {
+        background: rgba(255, 255, 255, 0.1);
+        scale: 1.1;
+    }
 </style>
 
 <!--<div class="avatar-box">-->
@@ -20,25 +37,27 @@
 
 <div class="centered-content">
     <div class="container">
-        <div class="side-navbar">
-            <div class="frame">
-                <div class="side-navbar-icon">☰</div>
-            </div>
+        {#if showNavbar}
+            <div class="side-navbar">
+                <div class="frame">
+                    <div class="side-navbar-icon">☰</div>
+                </div>
 
-            <div class="side-navbar-menu">
-                <a class="side-navbar-option" href="./">Home</a>
-                <a class="side-navbar-option" href="./About">About</a>
-                <a class="side-navbar-option" href="./Projects">Projects</a>
-                <a class="side-navbar-option" href="./TechStack">Tech Stack</a>
-                <a class="side-navbar-option" href="./Contact">Contact</a>
+                <div class="side-navbar-menu">
+                    <a class="side-navbar-option" href="./">Home</a>
+                    <a class="side-navbar-option" href="./About">About</a>
+                    <a class="side-navbar-option" href="./Projects">Projects</a>
+                    <a class="side-navbar-option" href="./TechStack">Tech Stack</a>
+                    <a class="side-navbar-option" href="./Contact">Contact</a>
+                </div>
             </div>
-        </div>
+        {/if}
 
         <div class="main-window">
             <div class="main-window-header">
 
                 <!--LayoutViewHeader Component-->
-                > <LayoutViewHeader/>
+                {'> '}<LayoutViewHeader/>
                 <!--If page is About, show scrolling images of my languages-->
                 <!--If page is Projects, show project grid-->
 
@@ -56,7 +75,12 @@
             </div>
         </div>
     </div>
+
+    <button class="toggle-button" onclick={toggleNavbar}>
+        {showNavbar ? "Hide Sidebar" : "Show Sidebar"}
+    </button>
+
 </div>
 
 
-<slot></slot>
+{@render children()}
