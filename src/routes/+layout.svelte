@@ -6,11 +6,13 @@
     import './global.css'
     import LayoutViewHeader from "../Components/LayoutViewHeader.svelte";
     import LayoutViewContent from "../Components/LayoutViewContent.svelte";
+    import ProjectGrid from "../Components/ProjectGrid.svelte";
     let showNavbar = $state(true);
     function toggleNavbar() {
         showNavbar = !showNavbar;
     }
     let { children } = $props();
+    import { page } from '$app/state'
 </script>
 
 <style>
@@ -57,7 +59,7 @@
             <div class="main-window-header">
 
                 <!--LayoutViewHeader Component-->
-                {'> '}<LayoutViewHeader/>
+                <LayoutViewHeader/>
                 <!--If page is About, show scrolling images of my languages-->
                 <!--If page is Projects, show project grid-->
 
@@ -70,8 +72,11 @@
 
             <div class="main-window-view">
                 <!--LayoutViewContent Component-->
-                <p><LayoutViewContent/></p>
-
+                {#if page.url.pathname === "/Projects"}
+                    <ProjectGrid/>
+                {:else}
+                    <LayoutViewContent/>
+                {/if}
             </div>
         </div>
     </div>
@@ -81,6 +86,5 @@
     </button>
 
 </div>
-
 
 {@render children()}

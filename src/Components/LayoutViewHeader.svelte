@@ -1,4 +1,5 @@
 <script>
     import { page } from "$app/state";
+    let symbol = '> ';
 </script>
-{page.data.pageTitle}
+{symbol + page.data.pageTitle}
