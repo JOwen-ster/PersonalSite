@@ -120,17 +120,13 @@ body {
 .red { background-color: #F44336; }
 
 .main-window-view {
-    display: flex;
-    flex-grow: 1;
+    height: 100%;
     padding: 20px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.1);
     box-shadow: none;
-    overflow-y: scroll;
-}
-
-.main-window-view > * {
-    flex-grow: 1;
+    overflow-y: auto;
+    box-sizing: border-box;
 }
 
 /* Avatar */
