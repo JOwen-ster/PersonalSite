@@ -1,18 +1,22 @@
 <!--Refactor Layout-->
-
+<!--
+* Take out Tech Stack and put that info on the homepage
+* Add icons for ever skill I have
+{ Python, C++, Java, Bash, Assembly,
+HTML, CSS, JS, Svelte,
+VSC, WebStorm, GitHub, Git }
+-->
 
 <script>
     // global css that the layout will pass on to its children
     import './global.css'
-    import LayoutViewHeader from "../Components/LayoutViewHeader.svelte";
-    import LayoutViewContent from "../Components/LayoutViewContent.svelte";
-    import ProjectGrid from "../Components/ProjectGrid.svelte";
+    import MainNavbar from "$lib/Components/MainNavbar.svelte";
+    import MainWindow from "$lib/Components/MainWindow.svelte";
     let showNavbar = $state(true);
     function toggleNavbar() {
         showNavbar = !showNavbar;
     }
     let { children } = $props();
-    import { page } from '$app/state'
 </script>
 
 <style>
@@ -40,47 +44,17 @@
 <div class="centered-content">
     <div class="container">
         {#if showNavbar}
-            <div class="side-navbar">
-                <div class="frame">
-                    <div class="side-navbar-icon">☰</div>
-                </div>
-
-                <div class="side-navbar-menu">
-                    <a class="side-navbar-option" href="./">Home</a>
-                    <a class="side-navbar-option" href="./About">About</a>
-                    <a class="side-navbar-option" href="./Projects">Projects</a>
-                    <a class="side-navbar-option" href="./TechStack">Tech Stack</a>
-                    <a class="side-navbar-option" href="./Contact">Contact</a>
-                </div>
-            </div>
+            <MainNavbar/>
         {/if}
 
-        <div class="main-window">
-            <div class="main-window-header">
-
-                <!--LayoutViewHeader Component-->
-                <LayoutViewHeader/>
-                <!--If page is About, show scrolling images of my languages-->
-                <!--If page is Projects, show project grid-->
-
-                <div class="main-window-buttons">
-                    <div class="circle green"></div>
-                    <div class="circle yellow"></div>
-                    <div class="circle red"></div>
-                </div>
-            </div>
-
-            <div class="main-window-view">
-                <!--LayoutViewContent Component-->
-                {#if page.url.pathname === "/Projects"}
-                    <ProjectGrid/>
-                {:else}
-                    <LayoutViewContent/>
-                {/if}
-            </div>
-        </div>
+        <MainWindow/>
     </div>
 
+    <!--
+    Hamburger icon should be clickable
+    so when the sidebar disappears then the hamburger
+    transfers to the main window and vice versa.
+     -->
     <button class="toggle-button" onclick={toggleNavbar}>
         {showNavbar ? "Hide Sidebar" : "Show Sidebar"}
     </button>

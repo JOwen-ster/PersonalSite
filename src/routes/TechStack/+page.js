@@ -1,6 +1,6 @@
 export function load() {
     return {
         pageTitle: "Tech Stack",
-        pageContent: "Made with ❤️ using SvelteKit!"
+        pageContent: "Made with ❤️ and 🔥 using SvelteKit!"
     };
 }
