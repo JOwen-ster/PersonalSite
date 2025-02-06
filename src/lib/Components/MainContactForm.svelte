@@ -3,7 +3,6 @@
         const contactorName = document.getElementById("name").value;
         const contactorMessage = document.getElementById("message").value
         window.location.href = `mailto:j.owen.sterling@outlook.com?subject=Business Inquiry&body=Hello, this is ${contactorName}. ${contactorMessage}`;
-        return true;
     }
 </script>
 
@@ -55,11 +54,11 @@
     }
 </style>
 
-<form>
+<form onsubmit={openEmailClient}>
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
     <label for="message">Message:</label>
     <textarea id="message" name="message" required></textarea>
     <br>
-    <button type="submit" onclick={openEmailClient()}>Submit</button>
+    <button type="submit">Submit</button>
 </form>
