@@ -2,6 +2,7 @@
 import { page } from "$app/state";
 import ProjectGrid from "$lib/Components/ProjectGrid.svelte";
 import MainHeader from "$lib/Components/MainHeader.svelte";
+import MainContactForm from "$lib/Components/MainContactForm.svelte";
 </script>
 
 <style>
@@ -35,6 +36,8 @@ import MainHeader from "$lib/Components/MainHeader.svelte";
         <!-- Render Check for Project Grid Component-->
         {#if page.url.pathname === "/Projects"}
             <ProjectGrid/>
+        {:else if page.url.pathname === "/Contact"}
+            <MainContactForm/>
         {:else}
             <!-- Add Styling -->
             {page.data.pageContent}

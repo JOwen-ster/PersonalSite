@@ -20,7 +20,7 @@ VSC, WebStorm, GitHub, Git }
 </script>
 
 <style>
-    /*local css applied only to this component*/
+    /*local css applied only to this Page*/
     .toggle-button {
         background: rgba(255, 255, 255, 0.05);
         color: darkorange;
